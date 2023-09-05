@@ -7,7 +7,7 @@ Nama : Shofiatul Ayu Anikaningrum
 Soal 1
 
 Tampilan Screenshoot
-![Screenshoot main_dart](docs/main_dart.PNG)
+![Screenshoot main_dart](docs/main_dart.png)
 
 Soal 2
 
@@ -37,7 +37,7 @@ Cara mengeksekusi kode dart :
 
 1. Dart virtual machines (VMs)
 2. JavaScript compilations
-![Screenshoot dart](docs/dart.PNG)
+![Screenshoot dart](docs/dart.png)
 
 Kode dart dapat dieksekusi pada fitur-fitur yang mendukung bahasa dart meliputi : Runtime systems, Dart core libraries, Garbage collectors.
 
@@ -57,15 +57,15 @@ Struktur bahasa Pemograman Dart meliputi :
     
 
 3. Arithmetic Operators 
-![Screenshoot aritmatika](docs/aritmatika.PNG)
+![Screenshoot aritmatika](docs/aritmatika.png)
 4. Increment and Decrement Operators
-![Screenshoot increment](docs/increment.PNG)
+![Screenshoot increment](docs/increment.png)
 5. Equality and Relational Operators
 
     Persamaan operator dart :
 
-    ![Screenshoot equality](docs/equality.PNG)
-    ![Screenshoot relational](docs/relational.PNG)
+    ![Screenshoot equality](docs/equality.png)
+    ![Screenshoot relational](docs/relational.png)
 
 6. Logical Operators
 
