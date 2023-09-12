@@ -33,7 +33,7 @@ Apa yang terjadi ? Jika terjadi error, silakan perbaiki namun tetap menggunakan 
 # Langkah 1
 Ketik atau salin kode program berikut ke dalam fungsi main().
 
-![Screenshoot P2_Langkah1](docs/P2_Langkah1.png)
+![Screenshoot P2_Langkah1](docs/P2_langkah1.png)
 
 # Langkah 2
 Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
