@@ -48,11 +48,11 @@ Untuk memperbaiki kode tersebut tambahkan "var counter = 20"
 # Langkah 3
 Tambahkan kode program berikut, lalu coba eksekusi (Run) kode Anda.
 
-![Screenshoot P2_Langkah3](docs/P2_Langkah3.png)
+![Screenshoot P2_langkah3](docs/P2_langkah3.png)
 
 Apa yang terjadi ? Jika terjadi error, silakan perbaiki namun tetap menggunakan do-while.
 
-![Screenshoot P2_Langkah3](docs/P2_Langkah3.png)
+![Screenshoot P2_langkah3](docs/P2_langkah3.png)
 
 ![Screenshoot P2_outputLangkah3](docs/P2_outputLangkah3.png)
 
@@ -63,7 +63,7 @@ Apa yang terjadi ? Jika terjadi error, silakan perbaiki namun tetap menggunakan 
 # Langkah 1
 Ketik atau salin kode program berikut ke dalam fungsi main().
 
-![Screenshoot P3_Langkah1](docs/P3_Langkah1.png)
+![Screenshoot P3_langkah1](docs/P3_langkah1.png)
 
 # Langkah 2
 Silakan coba eksekusi (Run) kode pada langkah 1 tersebut. Apa yang terjadi? Jelaskan! Lalu perbaiki jika terjadi error.
@@ -78,7 +78,7 @@ Perbaikan :
 # Langkah 3
 Tambahkan kode program berikut di dalam for-loop, lalu coba eksekusi (Run) kode Anda.
 
-![Screenshoot P3_Langkah3](docs/P3_Langkah3.png)
+![Screenshoot P3_langkah3](docs/P3_langkah3.png)
 
 Apa yang terjadi ? Jika terjadi error, silakan perbaiki namun tetap menggunakan for dan break-continue.
 
