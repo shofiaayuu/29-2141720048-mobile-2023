@@ -8,7 +8,9 @@ Pertemuan 4
 
 # PRAKTIKUM 1 - Eksperimen Tipe Data List
 # Langkah 1 
+
 Ketik atau salin kode program berikut ke dalam void main().
+
 ![Screenshoot P1_langkah1](docs/P1_langkah1.png)
 
 # Langkah 2
