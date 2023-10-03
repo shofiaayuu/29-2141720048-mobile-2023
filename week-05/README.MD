@@ -173,6 +173,75 @@ Tampilan hasil screenshoot pada README.MD
 
 
 
+# TUGAS PRAKTIKUM 
+#  Your first Flutter app
+
+# Tambahkan kode pada pubspec.yaml
+
+![Screenshoot namer_app](docs/T3_pubspec.png)
+
+# Tambahkan kode pada analysis_option.yaml
+
+![Screenshoot namer_app](docs/T3_analysis.png)
+
+# Edit kode program pada main.dart
+
+![Screenshoot namer_app](docs/T3_maindart1.png)
+
+![Screenshoot namer_app](docs/T3_maindart2.png)
+
+# Hasil menjalankan program pada Emulator
+
+![Screenshoot namer_app](docs/T3_hasil1.png)
+
+#  Menambahkan button " Next"
+
+![Screenshoot namer_app](docs/T3_hasilbutton.png)
+
+
+# Menjalankan secara random
+
+![Screenshoot namer_app](docs/T3_hasilrandom.png)
+
+
+# Membuat dengan prettier
+
+![Screenshoot namer_app](docs/T3_hasilprettier.png)
+
+# Hasil run dengan mengedit text theme dan style
+
+![Screenshoot namer_app](docs/T3_hasilthemestyle.png)
+
+
+# Menggunakan fungsionality like & next
+
+![Screenshoot namer_app](docs/T3_fungsionality.png)
+
+
+# Hasil run menggunakan navigation
+
+![Screenshoot namer_app](docs/T3_hasilnavigation.png)
+
+# Hasil run liked page
+
+![Screenshoot namer_app](docs/T3_hasillike.png)
+
+![Screenshoot namer_app](docs/T3_hasillike2.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 
 
