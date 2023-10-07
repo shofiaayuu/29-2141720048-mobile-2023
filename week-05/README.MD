@@ -9,24 +9,24 @@ Pertemuan 5 - Flutter Fundamental Bagian 1
 # PRAKTIKUM 1 - Membuat Project Flutter Baru
 
 
-# Langkah 1
+## Langkah 1
 Membuat project application flutter pada VSCode menekan tombol Ctrl + Shift + P
 
 ![Screenshoot hello_world](images/langkah1.1.png)
 
 ![Screenshoot hello_world](images/langkah1.2.png)
 
-# Langkah 2
+## Langkah 2
 Memilih direktori folder untuk menyimpan project tersebut
 
 ![Screenshoot hello_world](images/langkah2.png)
 
-# Langkah 3
+## Langkah 3
 Memberi nama project dengan nama hello_world
 
 ![Screenshoot hello_world](images/langkah3.png)
 
-# Langkah 4
+## Langkah 4
 Tampilan project jika sudah selesai membuat project flutter baru
 
 ![Screenshoot hello_world](images/langkah4.png)
@@ -36,12 +36,12 @@ Tampilan project jika sudah selesai membuat project flutter baru
 Menggunakan laporan praktikum dengan menggunakan style 1 repository untuk satu semester jadi tidak membuat repo baru untuk project ini
 Dan langsung pada langkah 11
 
-# Langkah 11
+## Langkah 11
 Running project pada main.dart untuk menampilkan emulator 
 
 ![Screenshoot hello_world](images/P2_langkah11.png)
 
-# Langkah 12
+## Langkah 12
 Tampilan hasil screenshoot pada README.MD
 
 ![Screenshoot hello_world](images/P2_langkah12.png)
@@ -50,7 +50,7 @@ Tampilan hasil screenshoot pada README.MD
 # PRAKTIKUM 3 - Menerapkan Widget Dasar
 
 
-# Langkah 1 - Text Widget 
+## Langkah 1 - Text Widget 
 
 - Kode Program
 
@@ -61,7 +61,7 @@ Tampilan hasil screenshoot pada README.MD
     ![Screenshoot hello_world](images/P3_langkah1.2.png)
 
 
-# Langkah 2 - Image Widget
+## Langkah 2 - Image Widget
 
 - Kode Program 
 
@@ -79,7 +79,7 @@ Tampilan hasil screenshoot pada README.MD
 # PRAKTIKUM 4 - Menerapkan Widget Material Design dan iOS Cupertino
 
 
-# Langkah 1 - Cupertino Button dan Loading Bar
+## Langkah 1 - Cupertino Button dan Loading Bar
 
 - Kode Program 
 
@@ -93,9 +93,12 @@ Tampilan hasil screenshoot pada README.MD
 
  ![Screenshoot hello_world](images/P4_langkah1.3.png)
 
+- Hasil run di HP
+    
+    ![Screenshoot hello_world](images/P4_HP_langkah1.3.jpg)
 
 
-# Langkah 2 - Floating Action Button (FAB)
+## Langkah 2 - Floating Action Button (FAB)
 
 - Kode Program 
 
@@ -109,8 +112,12 @@ Tampilan hasil screenshoot pada README.MD
     
     ![Screenshoot hello_world](images/P4_langkah2.3.png)
 
+- Hasil run di HP
 
-# Langkah 3 - Scaffold Widget
+    ![Screenshoot hello_world](images/P4_HP_langkah2.3.jpg)
+
+
+## Langkah 3 - Scaffold Widget
 
 - Kode Program 
 
@@ -124,8 +131,11 @@ Tampilan hasil screenshoot pada README.MD
 
     ![Screenshoot hello_world](images/P4_langkah3.4.png)
 
+- Hasil run di HP
+     
+    ![Screenshoot hello_world](images/P4_HP_langkah3.4.jpg)
 
-# Langkah 4 - Dialog Widget
+## Langkah 4 - Dialog Widget
 
 - Kode Program
 
@@ -141,8 +151,14 @@ Tampilan hasil screenshoot pada README.MD
 
     ![Screenshoot hello_world](images/P4_langkah4.4.png)
 
+-Hasil run di HP
 
-# Langkah 5 - Input dan Selection Widget
+   ![Screenshoot hello_world](images/P4_HP_langkah4.3.jpg)
+
+
+   ![Screenshoot hello_world](images/P4_HP_langkah4.4.jpg)
+
+## Langkah 5 - Input dan Selection Widget
 
 - Kode Program 
 
@@ -152,8 +168,12 @@ Tampilan hasil screenshoot pada README.MD
 
     ![Screenshoot hello_world](images/P4_langkah5.2.png)
 
+- Hasil run di HP
 
-# Langkah 6 - Date and Time Pickers
+    ![Screenshoot hello_world](images/P4_HP_langkah5.2.jpg)
+
+
+## Langkah 6 - Date and Time Pickers
 
 - Kode Program 
 
@@ -169,64 +189,86 @@ Tampilan hasil screenshoot pada README.MD
 
     ![Screenshoot hello_world](images/P4_langkah6.4.png)
 
+- Hasil run di HP
+
+    ![Screenshoot hello_world](images/P4_HP_langkah6.3.jpg)
+
+     ![Screenshoot hello_world](images/P4_HP_langkah6.4.jpg)
 
 
 
 
 # TUGAS PRAKTIKUM 
-#  Your first Flutter app
+##  Your first Flutter app
 
-# Tambahkan kode pada pubspec.yaml
+### Tambahkan kode pada pubspec.yaml
 
 ![Screenshoot namer_app](docs/T3_pubspec.png)
 
-# Tambahkan kode pada analysis_option.yaml
+### Tambahkan kode pada analysis_option.yaml
 
 ![Screenshoot namer_app](docs/T3_analysis.png)
 
-# Edit kode program pada main.dart
+### Edit kode program pada main.dart
 
 ![Screenshoot namer_app](docs/T3_maindart1.png)
 
 ![Screenshoot namer_app](docs/T3_maindart2.png)
 
-# Hasil menjalankan program pada Emulator
+### Hasil menjalankan program pada Emulator
 
 ![Screenshoot namer_app](docs/T3_hasil1.png)
 
-#  Menambahkan button " Next"
+###  Menambahkan button " Next"
 
 ![Screenshoot namer_app](docs/T3_hasilbutton.png)
 
 
-# Menjalankan secara random
+### Menjalankan secara random
 
 ![Screenshoot namer_app](docs/T3_hasilrandom.png)
 
 
-# Membuat dengan prettier
+### Membuat dengan prettier
 
 ![Screenshoot namer_app](docs/T3_hasilprettier.png)
 
-# Hasil run dengan mengedit text theme dan style
+### Hasil run dengan mengedit text theme dan style
 
 ![Screenshoot namer_app](docs/T3_hasilthemestyle.png)
 
 
-# Menggunakan fungsionality like & next
+### Menggunakan fungsionality like & next
 
 ![Screenshoot namer_app](docs/T3_fungsionality.png)
 
+### Hasil run di HP
 
-# Hasil run menggunakan navigation
+![Screenshoot namer_app](docs/T3_HP_fungsionality.jpg)
+
+
+
+### Hasil run menggunakan navigation
 
 ![Screenshoot namer_app](docs/T3_hasilnavigation.png)
 
-# Hasil run liked page
+### Hasil run di HP
+
+![Screenshoot namer_app](docs/T3_HP_hasilnavigation.jpg)
+
+### Hasil run liked page
 
 ![Screenshoot namer_app](docs/T3_hasillike.png)
 
 ![Screenshoot namer_app](docs/T3_hasillike2.png)
+
+### Hasil run HP
+
+![Screenshoot namer_app](docs/T3_HP_hasillike.jpg)
+
+![Screenshoot namer_app](docs/T3_HP_hasillike2.jpg)
+
+
 
 
 
