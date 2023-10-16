@@ -344,14 +344,153 @@ class MyApp extends StatelessWidget {
 // }
 
 //Image WIdget
+// class MyWidget extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Row(
+//       mainAxisAlignment: MainAxisAlignment.center,
+//       children: [
+//         Image.network('https://raw.githubusercontent.com/flutter/website/main/examples/layout/sizing/images/pic2.jpg'),
+//       ],
+//     );
+//   }
+// }
+
+// Putting it all together
+// PART 1
+
+// class MyWidget extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Row(children: [
+//       Padding(
+//         padding: const EdgeInsets.all(8),
+//         child: Icon(Icons.account_circle, size: 50),
+//       ),
+//       Column(
+//         mainAxisSize: MainAxisSize.min,
+//         crossAxisAlignment: CrossAxisAlignment.start,
+//         children: [
+//           Text(
+//             'Shofiatul Ayu Anikaningrum',
+//             style: Theme.of(context).textTheme.headlineSmall,
+//           ),
+//           const Text('Experienced App Developer'),
+//         ],
+//       ),
+//     ]);
+//   }
+// }
+
+//PART 2
+
+// class MyWidget extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Column(
+//       mainAxisSize: MainAxisSize.min,
+//       crossAxisAlignment: CrossAxisAlignment.stretch,
+//       children: [
+//         Row(
+//           children: [
+//             const Padding(
+//               padding: EdgeInsets.all(8.0),
+//               child: Icon(Icons.account_circle, size: 50),
+//             ),
+//             Column(
+//               crossAxisAlignment: CrossAxisAlignment.start,
+//               mainAxisSize: MainAxisSize.min,
+//               children: [
+//                 Text(
+//                   'Shofiatul Ayu Anikaningrum',
+//                   style: Theme.of(context).textTheme.headlineSmall,
+//                 ),
+//                 const Text('Experienced App Developer'),
+//               ],
+//             ),
+//           ],
+//         ),
+//         const SizedBox(height: 8),
+//         const Row(
+//           mainAxisAlignment: MainAxisAlignment.spaceBetween,
+//           children:  [
+//             Text('123 Main Street'),
+//             Text('085263436287'),
+//           ],
+//         ),
+//         const SizedBox(height: 16),
+//         const Row(
+//           children: const [],
+//         ),
+//       ],
+//     );
+//   }
+// }
+
+//PART 3
 class MyWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
       children: [
-        Image.network('https://raw.githubusercontent.com/flutter/website/main/examples/layout/sizing/images/pic2.jpg'),
+        Row(
+          children: [
+            const Padding(
+              padding: EdgeInsets.all(8.0),
+              child: Icon(Icons.account_circle, size: 50),
+            ),
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                Text(
+                  'Shofiatul Ayu Anikaningrum',
+                  style: Theme.of(context).textTheme.headlineSmall,
+                ),
+                const Text('Experienced App Developer'),
+              ],
+            ),
+          ],
+        ),
+        const SizedBox(height: 8),
+        const Row(
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children:  [
+            Text('123 Main Street'),
+            Text('415-555-0198'),
+          ],
+        ),
+        const SizedBox(height: 16),
+        const Row(
+        mainAxisAlignment: MainAxisAlignment.spaceAround,
+          children: [
+            Icon(
+              Icons.accessibility,
+              size: 50,
+              color: Colors.black,
+            ),
+            Icon(
+              Icons.timer,
+              size: 50,
+              color: Colors.black,
+            ),
+            Icon(
+              Icons.phone_android,
+              size: 50,
+              color: Colors.black,
+            ),
+            Icon(
+              Icons.phone_iphone,
+              size: 50,
+              color: Colors.black,
+            ),
+          ],
+        )
       ],
     );
   }
 }
+
+

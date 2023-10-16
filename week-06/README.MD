@@ -206,5 +206,19 @@ dengan gambar berbeda
     ![Screenshoot layout_flutter](docs/T2_image3.png)
 
 
+#### l. Putting it all together
+- Part 1
+
+    ![Screenshoot layout_flutter](docs/T2_puttingpart1.png)
+
+
+- Part 2
+
+    ![Screenshoot layout_flutter](docs/T2_puttingpart2.png)
+
+
+- Part 3
+
+    ![Screenshoot layout_flutter](docs/T2_puttingpart3.png)
 
 
