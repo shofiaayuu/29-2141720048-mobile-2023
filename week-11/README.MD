@@ -57,11 +57,38 @@ Absen : 29
 
 1. Selesaikan langkah-langkah praktikum tersebut, lalu dokumentasikan berupa GIF hasil akhir praktikum beserta penjelasannya di file README.md!
 
+    Jawab :
+
+    - Hasil run :
+
+    ![Screenshoot master_plan](docs/p2.jpg)
+
+
+    - Hasil run pada HP
+
+    ![Screenshoot master_plan](docs/hasilP2.gif)
+
 2. Jelaskan mana yang dimaksud InheritedWidget pada langkah 1 tersebut! Mengapa yang digunakan InheritedNotifier?
+
+    Jawab :
+
+    Pada langkah tersebut, kita membuat "PlanProvider" sebagai turunan dari InheritedNotifier untuk berbagi dan mengelola data "Plan" di seluruh aplikasi. ValueNotifier digunakan untuk memberitahu perubahan data yang dapat membantu widget dalam merespons perubahan data tanpa perlu mentransfer data secara manual dari satu widget ke widget lainnya. Penggunaan InheritedNotifier untuk  mempermudah manajemen data aplikasi dan memastikan widget selalu diperbarui saat data "Plan" berubah.
 
 3. Jelaskan maksud dari method di langkah 3 pada praktikum tersebut! Mengapa dilakukan demikian?
 
+    Jawab : 
+    Pada langkah ini menambahkan 2 method ke dalam model Plan :
+
+    - completedCount : digunakan untuk menghitung jumlah tugas yang sudah selesai dalam "Plan".
+
+    - completenessMessage : digunakan untuk memberikan pesan yang memberitahu berapa banyak tugas yang telah selesai dari total tugas yang ada dalam rencana(Plan). 
+    Dengan begitu, pengguna dapat melihat kemajuan dalam menyelesaikan tugasnya.
+
 4. Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
+
+    Jawab : 
+
+    Pada Langkah 9, kita membuat tampilan untuk halaman rencana (Plan) dengan judul "Master Plan" di AppBar. Kita menggunakan "ValueListenableBuilder" yang memantau perubahan objek Plan melalui "PlanProvider". Tampilan terdiri dari daftar tugas yang dapat digulir dan pesan yang mencerminkan kemajuan penyelesaian tugas. Kita juga menambahkan tombol tambah tugas yang responsif terhadap perubahan objek Plan. Dan memastikan tampilan selalu terkini sesuai dengan data yang diperbarui.
 
 
 
