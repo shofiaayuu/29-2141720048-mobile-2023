@@ -6,17 +6,16 @@ Absen : 29
 
 # Pertemuan 11 - Dasar State Management
 
-### Tugas Praktikum 1: Dasar State dengan Model-View
+### Tugas Praktikum 1 : Dasar State dengan Model-View
 
 1. Selesaikan langkah-langkah praktikum tersebut, lalu dokumentasikan berupa GIF hasil akhir praktikum beserta penjelasannya di file README.md!
 
-- Hasil run :
-
-    ![Screenshoot master_plan](docs/p1.jpg)
-
 - Hasil run pada HP
 
-    ![Screenshoot master_plan](docs/hasilP1.gif)
+    <img src="docs/hasilP1.gif" alt="Screenshoot Master Plan" width="230" height="430">
+
+
+
 
 2. Jelaskan maksud dari langkah 4 pada praktikum tersebut! Mengapa dilakukan demikian?
 
@@ -59,30 +58,29 @@ Absen : 29
 
     Jawab :
 
-    - Hasil run :
-
-    ![Screenshoot master_plan](docs/p2.jpg)
-
-
     - Hasil run pada HP
 
-    ![Screenshoot master_plan](docs/hasilP2.gif)
+        <img src="docs/hasilP2.gif" alt="Screenshoot Master Plan" width="230" height="430">
+    
 
 2. Jelaskan mana yang dimaksud InheritedWidget pada langkah 1 tersebut! Mengapa yang digunakan InheritedNotifier?
 
     Jawab :
 
     Pada langkah tersebut, kita membuat "PlanProvider" sebagai turunan dari InheritedNotifier untuk berbagi dan mengelola data "Plan" di seluruh aplikasi. ValueNotifier digunakan untuk memberitahu perubahan data yang dapat membantu widget dalam merespons perubahan data tanpa perlu mentransfer data secara manual dari satu widget ke widget lainnya. Penggunaan InheritedNotifier untuk  mempermudah manajemen data aplikasi dan memastikan widget selalu diperbarui saat data "Plan" berubah.
+    
 
 3. Jelaskan maksud dari method di langkah 3 pada praktikum tersebut! Mengapa dilakukan demikian?
 
     Jawab : 
+
     Pada langkah ini menambahkan 2 method ke dalam model Plan :
 
     - completedCount : digunakan untuk menghitung jumlah tugas yang sudah selesai dalam "Plan".
 
     - completenessMessage : digunakan untuk memberikan pesan yang memberitahu berapa banyak tugas yang telah selesai dari total tugas yang ada dalam rencana(Plan). 
     Dengan begitu, pengguna dapat melihat kemajuan dalam menyelesaikan tugasnya.
+
 
 4. Lakukan capture hasil dari Langkah 9 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
 
@@ -97,5 +95,22 @@ Absen : 29
 
 1. Selesaikan langkah-langkah praktikum tersebut, lalu dokumentasikan berupa GIF hasil akhir praktikum beserta penjelasannya di file README.md!
 
+    - Hasil run pada HP :
+
+        <img src="docs/hasilP3.gif" alt="Screenshoot Master Plan" width="230" height="430">
+
 2. Berdasarkan Praktikum 3 yang telah Anda lakukan, jelaskan maksud dari gambar diagram berikut ini!
+
+    ![Screenshoot master_plan](docs/tugas3.jpg)
+
+    Jawab : 
+
+    Ketika pengguna memasukkan nama rencana baru di layar PlanCreatorScreen, widget tersebut secara aktif menambahkan rencana baru tersebut ke dalam daftar rencana melalui PlanProvider. PlanProvider berperan sebagai manajer status aplikasi yang memberitahu semua widget turunannya mengenai perubahan pada daftar rencana. Dengan adanya pemberitahuan ini, seluruh widget turunan, termasuk PlanScreen, segera merespons dan memperbarui tampilan sesuai dengan daftar rencana terbaru. 
+
+3. Lakukan capture hasil dari Langkah 14 berupa GIF, kemudian jelaskan apa yang telah Anda buat!
+
+    Jawab : 
+
+    Pada Langkah 14, penambahan fitur di PlanCreatorScreen memungkinkan pengguna membuat dan menampilkan daftar rencana baru. Layar pertama, PlanCreatorScreen, memungkinkan pembuatan rencana baru, sementara layar kedua, PlanScreen, memungkinkan melihat detail rencana yang ada dan melakukan penambahan, penghapusan, atau pengeditan tugas.
+
 
