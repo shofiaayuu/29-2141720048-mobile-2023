@@ -60,14 +60,44 @@ Absen  : 29
 
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 3".
 
+  <img src="docs/soal3.jpg" alt="Screenshoot Master Plan" width="230" height="430">
 
 # Praktikum 2: Menggunakan await/async untuk menghindari callbacks
+
+#### Langkah 1: Buka file main.dart
+
+Tambahkan tiga method berisi kode seperti berikut di dalam class _FuturePageState.
+
+![Screenshoot books](docs/P2_L1.jpg)
+
+#### Langkah 2: Tambah method count()
+
+![Screenshoot books](docs/P2_L2.jpg)
+
+#### Langkah 3: Panggil count()
+
+![Screenshoot books](docs/P2_L3.jpg)
+
 
 #### Soal 4
 
 - Jelaskan maksud kode langkah 1 dan 2 tersebut!
 
+  Jawab :
+
+  - Langkah 1 
+  
+    Menggunakan tiga fungsi asinkron (returnOneAsync, returnTwoAsync, dan returnThreeAsync),masing-masing mengembalikan nilai setelah penundaan 3 detik. Penggunaan 'async' dan 'await` memungkinkan eksekusi secara asinkron tanpa menghambat program utama.
+
+  - Langkah 2 
+
+    Menggunakan fungsi asinkron 'count', yang mengumpulkan hasil panggilan tiga fungsi asinkron sebelum mengupdate state (result). Penggunaan 'await' memastikan urutan eksekusi, dan 'setState` memastikan pembaruan tampilan setelah eksekusi selesai.
+
+
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 4".
+
+  <img src="docs/soal4.gif" alt="Screenshoot Master Plan" width="230" height="430">
+  
 
 
 # 5. Praktikum 3: Menggunakan Completer di Future
