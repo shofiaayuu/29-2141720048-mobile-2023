@@ -154,11 +154,25 @@ Tambahkan variabel late dan method di class _FuturePageState seperti ini.
   <img src="docs/soal6.gif" alt="Screenshoot Master Plan" width="230" height="430">
 
 
-# 6. Praktikum 4: Memanggil Future secara paralel
+# Praktikum 4: Memanggil Future secara paralel
+
+#### Langkah 1: Buka file main.dart
+
+Tambahkan method ini ke dalam class _FuturePageState
+
+  ![Screenshoot books](docs/P4_L1.jpg)
+
+#### Langkah 2: Edit onPressed()
+
+  ![Screenshoot books](docs/P4_L2.jpg)
 
 #### Soal 7
 
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 7".
+
+  <img src="docs/soal7.gif" alt="Screenshoot Master Plan" width="230" height="430">
+
+#### Langkah 4: Ganti variabel futureGroup
 
 #### Soal 8
 
