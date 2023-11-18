@@ -114,6 +114,8 @@ Pastikan telah impor package async berikut.
 
 Tambahkan variabel late dan method di class _FuturePageState seperti ini.
 
+  ![Screenshoot books](docs/P3_L2.jpg)
+
 #### Langkah 3: Ganti isi kode onPressed()
 
 
@@ -131,14 +133,25 @@ Tambahkan variabel late dan method di class _FuturePageState seperti ini.
 
 #### Langkah 5: Ganti method calculate()
 
+  ![Screenshoot books](docs/P3_L5.jpg)
+
 #### Langkah 6: Pindah ke onPressed()
 
+  ![Screenshoot books](docs/P3_L6.jpg)
 
 #### Soal 6
 
 - Jelaskan maksud perbedaan kode langkah 2 dengan langkah 5-6 tersebut!
 
+  Jawab : 
+
+  - Versi yang menggunakan try-catch memberikan lapisan perlindungan terhadap kemungkinan kesalahan selama penundaan.
+
+  - Sementara itu, versi yang tanpa try-catch lebih sederhana dan tidak secara eksplisit menangani potensi kesalahan.
+
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 6".
+
+  <img src="docs/soal6.gif" alt="Screenshoot Master Plan" width="230" height="430">
 
 
 # 6. Praktikum 4: Memanggil Future secara paralel
