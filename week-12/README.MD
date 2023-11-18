@@ -102,11 +102,37 @@ Tambahkan tiga method berisi kode seperti berikut di dalam class _FuturePageStat
 
 # 5. Praktikum 3: Menggunakan Completer di Future
 
+#### Langkah 1: Buka main.dart
+
+Pastikan telah impor package async berikut.
+
+    import 'package:async/async.dart';
+
+
+
+#### Langkah 2: Tambahkan variabel dan method
+
+Tambahkan variabel late dan method di class _FuturePageState seperti ini.
+
+#### Langkah 3: Ganti isi kode onPressed()
+
+
 #### Soal 5
 
 - Jelaskan maksud kode langkah 2 tersebut!
 
+  Jawab :
+
+  Pada langkah tersebut menggunakan objek 'Completer' untuk menangani operasi asinkron. Dalam fungsi 'getNumber', objek Completer diinisialisasi dan dipasangkan dengan fungsi 'calculate()'. Fungsi calculate adalah fungsi asinkron yang menunda eksekusi selama 5 detik sebelum mengisi nilai 42 ke dalam 'completer'. Fungsi 'getNumber' mengembalikan objek 'Future' dari completer, memungkinkan akses ke nilai hasil operasi asinkron di waktu selanjutnya.
+
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 5".
+
+  <img src="docs/soal5.gif" alt="Screenshoot Master Plan" width="230" height="430">
+
+#### Langkah 5: Ganti method calculate()
+
+#### Langkah 6: Pindah ke onPressed()
+
 
 #### Soal 6
 
