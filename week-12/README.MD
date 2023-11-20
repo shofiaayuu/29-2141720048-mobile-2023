@@ -350,11 +350,19 @@ Tambah variabel ini di class _LocationScreenState
 
 #### Langkah 5: Tambah handling error
 
+  ![Screenshoot books](docs/P7_L5.jpg)
+
 #### Soal 14
 
 - Apakah ada perbedaan UI dengan langkah sebelumnya? Mengapa demikian?
 
+  Jawab : 
+
+  Tidak ada perbedaan,  hanya  saja menambahakn kode program errorhandling, yang jika terjadi kesalahan dan akan menampilkan teks kesalahan. Tetapi pada pada praktikum ini tidak terjadi error
+
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 14".
+
+  <img src="docs/soal14.gif" alt="Screenshoot Master Plan" width="230" height="430">
 
 
 # Praktikum 8: Navigation route dengan Future Function
