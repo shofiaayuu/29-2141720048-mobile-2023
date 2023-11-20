@@ -178,12 +178,28 @@ Tambahkan method ini ke dalam class _FuturePageState
 
 Jelaskan maksud perbedaan kode langkah 1 dan 4!
 
+  Jawab : 
+
+  Perbedaannya terletak pada pendekatan penanganan dan penungguan kelompok Future. Langkah 1 menggunakan objek FutureGroup, sementara Langkah 4 secara langsung menerapkan Future.wait untuk mengatasi beberapa Future secara bersamaan. 
+
 
 # Praktikum 5: Menangani Respon Error pada Async Code
 
+#### Langkah 1: Buka file main.dart
+
+Tambahkan method ini ke dalam class _FuturePageState
+
+  ![Screenshoot books](docs/P5_L1.jpg)
+
+#### Langkah 2: ElevatedButton
+
+  ![Screenshoot books](docs/P5_L2.jpg)
+  
 #### Soal 9
 
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 9".
+
+  <img src="docs/soal9.gif" alt="Screenshoot Master Plan" width="230" height="430">
 
 #### Soal 10
 
