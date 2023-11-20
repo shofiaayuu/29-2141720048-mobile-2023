@@ -194,29 +194,123 @@ Tambahkan method ini ke dalam class _FuturePageState
 #### Langkah 2: ElevatedButton
 
   ![Screenshoot books](docs/P5_L2.jpg)
-  
+
 #### Soal 9
 
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 9".
 
   <img src="docs/soal9.gif" alt="Screenshoot Master Plan" width="230" height="430">
 
+#### Langkah 4: Tambah method handleError()
+
+
 #### Soal 10
 
 - Panggil method handleError() tersebut di ElevatedButton, lalu run. Apa hasilnya? Jelaskan perbedaan kode langkah 1 dan 4!
 
 
+  <img src="docs/soal10.gif" alt="Screenshoot Master Plan" width="230" height="430">
+
+  Jawab :
+  - Langkah 1
+  Fungsi returnError melempar error tanpa menangkapnya secara langsung dan tidak ada upaya untuk menangani atau merespons error di dalam fungsi tersebut.
+
+  - Langkah 4
+
+    Fungsi handleError memanggil fungsi returnError dalam blok try.
+    Jika terjadi error selama eksekusi returnError, blok catch menangkap error dan melakukan penanganan error dengan mengubah nilai result dengan pesan error.
+    
+  
+
+
 # Praktikum 6: Menggunakan Future dengan StatefulWidget
+
+#### Langkah 1: install plugin geolocator
+
+  ![Screenshoot books](docs/P6_L1.jpg)
+
+
+#### Langkah 2: Tambah permission GPS
+
+Jika Anda menargetkan untuk platform Android, maka tambahkan baris kode berikut di file android/app/src/main/androidmanifest.xml
+
+  ![Screenshoot books](docs/P6_L2.jpg)
+
+#### Langkah 3: Buat file geolocation.dart
+
+  ![Screenshoot books](docs/P6_L3.jpg)
+
+#### Langkah 5: Isi kode geolocation.dart
+
+      import 'package:flutter/material.dart';
+      import 'package:geolocator/geolocator.dart';
+
+      class LocationScreen extends StatefulWidget {
+        const LocationScreen({super.key});
+
+        @override
+        State<LocationScreen> createState() => _LocationScreenState();
+      }
+      class _LocationScreenState extends State<LocationScreen> {
+        String myPosition = '';
+        @override
+        void initState() {
+          super.initState();
+          getPosition().then((Position myPos) {
+            myPosition =
+                'Latitude: ${myPos.latitude.toString()} - Longitude: ${myPos.longitude.toString()}';
+            setState(() {
+              myPosition = myPosition;
+            });
+          });
+        }
+        @override
+        Widget build(BuildContext context) {
+          return Scaffold(
+            appBar: AppBar(title: const Text('Current Location ')),
+            body: Center(child: Text(myPosition)),
+          );
+        }
+        Future<Position> getPosition() async {
+          await Geolocator.requestPermission();
+          await Geolocator.isLocationServiceEnabled();
+          Position? position = await Geolocator.getCurrentPosition();
+          return position;
+        }
+      }
+
 
 #### Soal 11
 
 - Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
 
+  ![Screenshoot books](docs/soal11.jpg)
+
+#### Langkah 6: Edit main.dart
+
+![Screenshoot books](docs/P6_L6.jpg)
+
+#### Langkah 7: Run
+
+#### Langkah 8: Tambahkan animasi loading
+
+  ![Screenshoot books](docs/P6_L8.jpg)
+
 #### Soal 12
 
 - Jika Anda tidak melihat animasi loading tampil, kemungkinan itu berjalan sangat cepat. Tambahkan delay pada method getPosition() dengan kode await Future.delayed(const Duration(seconds: 3));
 
+   <img src="docs/soal12.gif" alt="Screenshoot Master Plan" width="230" height="430">
+
 - Apakah Anda mendapatkan koordinat GPS ketika run di browser? Mengapa demikian?
+
+  Jawab : 
+
+  Jika dijalankan di browser, Flutter web masih dapat mengakses atau mendapatkan koordinat GPS karena menggunakan API Geolocation dari browser langsung. Dalam konteks Flutter web, izin akses lokasi dikelola oleh browser, tidak oleh sistem operasi (misalnya, Android pada perangkat seluler). Meskipun tidak perlu menambahkan izin secara langsung ke AndroidManifest, koordinat GPS masih dapat diakses di browser, tetapi tetap memerlukan izin dari pengguna.
+
+    <img src="docs/soal12browser.jpg" alt="Screenshoot Master Plan" width="230" height="430">
+
+  
 
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 12".
 
