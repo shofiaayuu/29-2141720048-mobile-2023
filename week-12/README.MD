@@ -316,13 +316,39 @@ Jika Anda menargetkan untuk platform Android, maka tambahkan baris kode berikut 
 
 # Praktikum 7: Manajemen Future dengan FutureBuilder
 
+#### Langkah 1: Modifikasi method getPosition()
+
+  ![Screenshoot books](docs/P7_L1.jpg)
+
+#### Langkah 2: Tambah variabel
+
+Tambah variabel ini di class _LocationScreenState
+
+  ![Screenshoot books](docs/P7_L2.jpg)
+
+#### Langkah 3: Tambah initState()
+
+  ![Screenshoot books](docs/P7_L3.jpg)
+
+#### Langkah 4: Edit method build()
+
+  ![Screenshoot books](docs/P7_L4.jpg)
+
 #### Soal 13
 
 - Apakah ada perbedaan UI dengan praktikum sebelumnya? Mengapa demikian?
 
+  Jawab : 
+
+  Kedua praktikum tersebut tidak memiliki perbedaan pada antarmuka pengguna (UI). Keduanya menampilkan koordinat geolokasi dengan tata letak yang identik. Kesamaan ini disebabkan oleh pengambilan lokasi yang masih bersifat sinkron di dalam blok initState pada kedua praktikum. Waktu tampilan UI pada keduanya juga mengalami delay yang sama, yaitu 3 detik. Selain itu, tampilan UI dapat tampak seragam karena FutureBuilder secara otomatis mengelola pembaruan UI, bahkan tanpa perlu pemanggilan setState secara langsung.
+
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 13".
 
+  <img src="docs/soal13.gif" alt="Screenshoot Master Plan" width="230" height="430">
+
 - Seperti yang Anda lihat, menggunakan FutureBuilder lebih efisien, clean, dan reactive dengan Future bersama UI.
+
+#### Langkah 5: Tambah handling error
 
 #### Soal 14
 
