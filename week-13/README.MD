@@ -65,7 +65,20 @@ Absen  : 29
 
 #### Soal 6
 - Jelaskan maksud kode langkah 8 dan 10 tersebut!
+    
+    Jawab :
+    - Langkah 8:
+
+        Dalam initState, objek 'NumberStream' dan 'numberStreamController' diinisialisasi. Stream diambil dari 'numberStreamController.stream', dan setiap kali stream mengeluarkan nilai baru, callback dijalankan untuk mengupdate lastNumber dan memicu pembangunan ulang widget dengan setState.
+
+    - Langkah 10:
+
+        Pada method addRandomNumber dibuat untuk menambahkan angka acak ke dalam stream. Dalam metode ini, objek 'Random' digunakan untuk menghasilkan angka acak (myNum), yang kemudian ditambahkan ke dalam stream melalui 'numberStream.addNumberToSink'. Dan memicu pada langkah 8
+
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+    <img src="docs/soal6.gif" alt="Screenshoot Master Plan" width="230" height="430">
+    
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 6".
 
 #### Soal 7
