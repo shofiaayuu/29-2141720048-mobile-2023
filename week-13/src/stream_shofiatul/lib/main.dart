@@ -47,17 +47,18 @@ class _StreamHomePageState extends State<StreamHomePage> {
       //   decoration: BoxDecoration(color: bgColor),
       // ),
       body: SizedBox(
-        width: double.infinity,
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Text(lastNumber.toString()),
-            ElevatedButton(onPressed: () => addRandomNumber(),
-             child: const Text('New Random Number Shofiatul'),
-            )
-          ],
-        )),
+          width: double.infinity,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Text(lastNumber.toString()),
+              ElevatedButton(
+                onPressed: () => addRandomNumber(),
+                child: const Text('New Random Number Shofiatul'),
+              )
+            ],
+          )),
     );
   }
 
@@ -67,6 +68,7 @@ class _StreamHomePageState extends State<StreamHomePage> {
     //     bgColor = eventColor;
     //   });
     // }
+
     colorStream.getColors().listen((eventColor) {
       setState(() {
         bgColor = eventColor;
@@ -86,6 +88,10 @@ class _StreamHomePageState extends State<StreamHomePage> {
       setState(() {
         lastNumber = event;
       });
+    }).onError((error) {
+      setState(() {
+        lastNumber = -1;
+      });
     });
     super.initState();
   }
@@ -100,5 +106,6 @@ class _StreamHomePageState extends State<StreamHomePage> {
     Random random = Random();
     int myNum = random.nextInt(10);
     numberStream.addNumberToSink(myNum);
+    // numberStream.addError();
   }
 }

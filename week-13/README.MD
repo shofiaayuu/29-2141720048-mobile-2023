@@ -78,12 +78,24 @@ Absen  : 29
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
 
     <img src="docs/soal6.gif" alt="Screenshoot Master Plan" width="230" height="430">
-    
+
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 6".
 
 #### Soal 7
 - Jelaskan maksud kode langkah 13 sampai 15 tersebut!
+
+    Jawab :
+
+    - Langkah 13 menambahkan pesan error ke dalam stream dengan menggunakan metode 'addError'.
+
+    - Langkah 14, dalam methode initState, mendengarkan stream dengan 'listen'. Setiap kali stream mengeluarkan nilai baru, callback dijalankan untuk memperbarui 'lastNumber' dan memicu pembangunan ulang widget. Blok 'onError' menangkap dan mengelola error dalam stream, mengatur lastNumber menjadi -1 jika error terjadi.
+
+    - Langkah 15, melalui metode 'addRandomNumber', menambahkan error ke dalam stream dengan memanggil 'numberStream.addError()'. Error ini kemudian ditangkap oleh langkah sebelumnya (Langkah 14) untuk dikelola.
+
+    <img src="docs/soal7.gif" alt="Screenshoot Master Plan" width="230" height="430">
+
 - Kembalikan kode seperti semula pada Langkah 15, comment addError() agar Anda dapat melanjutkan ke praktikum 3 berikutnya.
+
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 7".
 
 # Praktikum 3: Injeksi data ke streams
