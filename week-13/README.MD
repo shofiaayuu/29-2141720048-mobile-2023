@@ -19,6 +19,9 @@ Absen  : 29
 
 #### Soal 2
 - Tambahkan 5 warna lainnya sesuai keinginan Anda pada variabel colors tersebut.
+
+    ![Screenshoot stream_shofiatul](docs/soal2.jpg)
+
 - Lakukan commit hasil jawaban Soal 2 dengan pesan "W13: Jawaban Soal 2"
 
 #### Soal 3
