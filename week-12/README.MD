@@ -39,9 +39,6 @@ Absen  : 29
     ![Screenshoot books](docs/soal2.jpg)
 
 
-
-
-
 #### Soal 3
 
 - Jelaskan maksud kode langkah 5 tersebut terkait substring dan catchError!
@@ -99,15 +96,13 @@ Tambahkan tiga method berisi kode seperti berikut di dalam class _FuturePageStat
   <img src="docs/soal4.gif" alt="Screenshoot Master Plan" width="230" height="430">
   
 
-
-# 5. Praktikum 3: Menggunakan Completer di Future
+# Praktikum 3: Menggunakan Completer di Future
 
 #### Langkah 1: Buka main.dart
 
 Pastikan telah impor package async berikut.
 
     import 'package:async/async.dart';
-
 
 
 #### Langkah 2: Tambahkan variabel dan method
@@ -117,6 +112,8 @@ Tambahkan variabel late dan method di class _FuturePageState seperti ini.
   ![Screenshoot books](docs/P3_L2.jpg)
 
 #### Langkah 3: Ganti isi kode onPressed()
+
+  ![Screenshoot books](docs/P3_L3.jpg)
 
 
 #### Soal 5
@@ -174,6 +171,8 @@ Tambahkan method ini ke dalam class _FuturePageState
 
 #### Langkah 4: Ganti variabel futureGroup
 
+  ![Screenshoot books](docs/P4_L4.jpg)
+
 #### Soal 8
 
 Jelaskan maksud perbedaan kode langkah 1 dan 4!
@@ -203,6 +202,8 @@ Tambahkan method ini ke dalam class _FuturePageState
 
 #### Langkah 4: Tambah method handleError()
 
+  ![Screenshoot books](docs/P5_L4.jpg)
+
 
 #### Soal 10
 
@@ -213,15 +214,14 @@ Tambahkan method ini ke dalam class _FuturePageState
 
   Jawab :
   - Langkah 1
-  Fungsi returnError melempar error tanpa menangkapnya secara langsung dan tidak ada upaya untuk menangani atau merespons error di dalam fungsi tersebut.
+
+    Fungsi returnError melempar error tanpa menangkapnya secara langsung dan tidak ada upaya untuk menangani atau merespons error di dalam fungsi tersebut.
 
   - Langkah 4
 
     Fungsi handleError memanggil fungsi returnError dalam blok try.
     Jika terjadi error selama eksekusi returnError, blok catch menangkap error dan melakukan penanganan error dengan mengubah nilai result dengan pesan error.
     
-  
-
 
 # Praktikum 6: Menggunakan Future dengan StatefulWidget
 
@@ -371,7 +371,6 @@ Tambah variabel ini di class _LocationScreenState
 
 Buatlah file baru ini di project lib Anda.
 
-
 #### Langkah 2: Isi kode navigation_first.dart
 
     class NavigationFirst extends StatefulWidget {
@@ -472,7 +471,6 @@ Buat file baru ini di project lib Anda. Silakan jika ingin mengelompokkan view m
 
   ![Screenshoot books](docs/P8_L6.jpg)
    
-
 #### Soal 16
 
 - Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
@@ -567,11 +565,6 @@ Buat file dart baru di folder lib project Anda.
 #### Langkah 5: Edit main.dart
 
   ![Screenshoot books](docs/P9_L5.jpg)
-
-#### Langkah 6: Run
-
-Coba ganti warna background dengan widget dialog tersebut. Jika terjadi error, silakan diperbaiki. Jika berhasil, akan tampil seperti gambar berikut.
-
 
 #### Soal 17
 
