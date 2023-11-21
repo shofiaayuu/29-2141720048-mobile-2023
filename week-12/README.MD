@@ -490,10 +490,99 @@ Buat file baru ini di project lib Anda. Silakan jika ingin mengelompokkan view m
 
 # Praktikum 9: Memanfaatkan async/await dengan Widget Dialog
 
+#### Langkah 1: Buat file baru navigation_dialog.dart
+
+Buat file dart baru di folder lib project Anda.
+
+#### Langkah 2: Isi kode navigation_dialog.dart
+
+    import 'package:flutter/material.dart';
+
+    class NavigationDialogScreen extends StatefulWidget {
+      const NavigationDialogScreen({super.key});
+
+      @override
+      State<NavigationDialogScreen> createState() => _NavigationDialogScreenState();
+    }
+
+    class _NavigationDialogScreenState extends State<NavigationDialogScreen> {
+      Color color = Colors.blue.shade700;
+      @override
+      Widget build(BuildContext context) {
+        return Scaffold(
+          backgroundColor: color,
+          appBar: AppBar(
+            title: const Text('Navigation Dialog Screen Shofiatul'),
+          ),
+          body: Center(
+              child: 
+                ElevatedButton(child: const Text('Change Color'),
+            onPressed: () {
+            },
+          )),
+        );
+      }
+    }
+
+#### Langkah 3: Tambah method async
+
+    _showColorDialog(BuildContext context) async {
+        await showDialog(
+          barrierDismissible: false,
+          context: context,
+          builder: (_) {
+            return AlertDialog(
+              title: const Text('Very important question'),
+              content: const Text('Please choose a color'),
+              actions: <Widget>[
+                TextButton(
+                    child: const Text('Red'),
+                    onPressed: () {
+                      color = Colors.red.shade700;
+                      Navigator.pop(context, color);
+                    }),
+                TextButton(
+                    child: const Text('Green'),
+                    onPressed: () {
+                      color = Colors.green.shade700;
+                      Navigator.pop(context, color);
+                    }),
+                TextButton(
+                    child: const Text('Blue'),
+                    onPressed: () {
+                      color = Colors.blue.shade700;
+                      Navigator.pop(context, color);
+                    }),
+              ],
+            );
+          },
+        );
+        setState(() {});
+      }
+
+#### Langkah 4: Panggil method di ElevatedButton
+
+  ![Screenshoot books](docs/P9_L4.jpg)
+
+#### Langkah 5: Edit main.dart
+
+  ![Screenshoot books](docs/P9_L5.jpg)
+
+#### Langkah 6: Run
+
+Coba ganti warna background dengan widget dialog tersebut. Jika terjadi error, silakan diperbaiki. Jika berhasil, akan tampil seperti gambar berikut.
+
+
 #### Soal 17
 
 - Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
 
+  Jawab :
+
+  Ketika tombol "changecolor" ditekan, muncul alert/dialog yang memungkinkan pengguna memilih warna untuk mengubah latar belakang. Proses ini terjadi karena nilai warna diperbarui dengan nilai yang dipilih dalam fungsi _showColorDialog, dan setelah itu, widget diperbarui dengan menggunakan setState. Hal ini mengakibatkan pembangunan kembali widget dan menampilkan perubahan warna pada layar.
+
 - Gantilah 3 warna pada langkah 3 dengan warna favorit Anda!
 
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 17".
+
+  <img src="docs/soal17.gif" alt="Screenshoot Master Plan" width="230" height="430">
