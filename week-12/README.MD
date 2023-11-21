@@ -367,22 +367,128 @@ Tambah variabel ini di class _LocationScreenState
 
 # Praktikum 8: Navigation route dengan Future Function
 
+#### Langkah 1: Buat file baru navigation_first.dart
+
+Buatlah file baru ini di project lib Anda.
+
+
+#### Langkah 2: Isi kode navigation_first.dart
+
+    class NavigationFirst extends StatefulWidget {
+      const NavigationFirst({super.key});
+
+      @override
+      State<NavigationFirst> createState() => _NavigationFirstState();
+    }
+
+    class _NavigationFirstState extends State<NavigationFirst> {
+      Color color = Colors.blue.shade700;
+
+      @override
+      Widget build(BuildContext context) {
+        return Scaffold(
+          backgroundColor: color,
+          appBar: AppBar(
+            title: const Text('Navigation First Screen'),
+          ),
+          body: Center(
+            child: ElevatedButton(
+                child: const Text('Change Cololr'),
+                onPressed: () {
+                  _navigateAndGetColor(context);
+                }),
+          ),
+        );
+      }
+    }
+
 #### Soal 15
 
 - Tambahkan nama panggilan Anda pada tiap properti title sebagai identitas pekerjaan Anda.
 
+  ![Screenshoot books](docs/soal15.jpg)
+
 - Silakan ganti dengan 
 warna tema favorit Anda.
+
+#### Langkah 3: Tambah method di class _NavigationFirstState
+
+  ![Screenshoot books](docs/P8_L3.jpg)
+
+#### Langkah 4: Buat file baru navigation_second.dart
+
+Buat file baru ini di project lib Anda. Silakan jika ingin mengelompokkan view menjadi satu folder dan sesuaikan impor yang dibutuhkan.
+
+#### Langkah 5: Buat class NavigationSecond dengan StatefulWidget
+
+    import 'package:flutter/material.dart';
+
+    class NavigationSecond extends StatefulWidget {
+      const NavigationSecond({super.key});
+
+      @override
+      State<NavigationSecond> createState() => _NavigationSecondState();
+    }
+
+    class _NavigationSecondState extends State<NavigationSecond> {
+      @override
+      Widget build(BuildContext context) {
+        Color color;
+        return Scaffold(
+          appBar: AppBar(
+            title: const Text("Navigation Second Screen Shofiatul"),
+          ),
+          body: Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                const Spacer(),
+                ElevatedButton(
+                  child: const Text("Red"),
+                    onPressed: () {
+                      color = Colors.red.shade700;
+                      Navigator.pop(context, color);
+                    }),
+                ElevatedButton(
+                  child: const Text("Green"),
+                    onPressed: () {
+                      color = Colors.green.shade700;
+                      Navigator.pop(context, color);
+                    }),  
+                ElevatedButton(
+                  child: const Text("Blue"),
+                    onPressed: () {
+                      color = Colors.blue.shade700;
+                      Navigator.pop(context, color);
+                    }),  
+              ],
+            ),
+          ),
+        );
+      }
+    }
+
+#### Langkah 6: Edit main.dart
+
+  ![Screenshoot books](docs/P8_L6.jpg)
+   
 
 #### Soal 16
 
 - Cobalah klik setiap button, apa yang terjadi ? Mengapa demikian ?
 
+  Jawab :
+
+  Ketika tombol  button diklik, warnanya akan berubah sesuai dengan konfigurasi yang telah ditetapkan dalam ElevatedButton() di dalam kelas navigation_second.dart. Perubahan warna ini karena terdapat fungsi Navigation.pop() pada setiap tombol, dengan parameter berupa konteks dan warna yang telah ditentukan sebelumnya. Jadi, jika masing-masing tombol diklik, warna yang ditampilkan akan bervariasi sesuai dengan nilai variabel color yang telah diatur sebelumnya.
+
 - Gantilah 3 warna pada langkah 5 dengan warna favorit Anda!
 
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README. Lalu lakukan commit dengan pesan "W12: Soal 16".
 
-# 11. Praktikum 9: Memanfaatkan async/await dengan Widget Dialog
+  <img src="docs/soal16.gif" alt="Screenshoot Master Plan" width="230" height="430">
+
+
+# Praktikum 9: Memanfaatkan async/await dengan Widget Dialog
 
 #### Soal 17
 
