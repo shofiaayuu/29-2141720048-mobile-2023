@@ -45,6 +45,9 @@ Absen  : 29
 
 #### Soal 4
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+    <img src="docs/soal4.gif" alt="Screenshoot Master Plan" width="230" height="430">
+
 - Lakukan commit hasil jawaban Soal 4 dengan pesan "W13: Jawaban Soal 4"
 
 #### Soal 5
