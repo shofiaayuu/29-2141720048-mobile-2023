@@ -26,7 +26,21 @@ Absen  : 29
 
 #### Soal 3
 - Jelaskan fungsi keyword yield* pada kode tersebut!
+
+    Jawab : 
+
+    Keyword 'yield*' pada kode tersebut menggabungkan nilai-nilai dari generator 'Stream.periodic ke dalam generator utama. Dengan demikian, stream utama menghasilkan nilai-nilai dari list colors secara periodik, menciptakan efek perubahan warna setiap detiknya dan melakukan perubahan warna yang teratur.
+
 - Apa maksud isi perintah kode tersebut?
+
+    Jawab : 
+
+    - Stream.periodic digunakan untuk membuat stream periodik.
+    - const Duration(seconds: 1) untuk menentukan interval detik.
+    - (int t)merupakan fungsi yang dijalankan pada setiap periode dengan waktu t sebagai parameter.
+    - int index = t % colors.length untuk menghitung indeks dengan modulus.
+    - return colors[index] untuk mengembalikan nilai dari list colors.
+
 - Lakukan commit hasil jawaban Soal 3 dengan pesan "W13: Jawaban Soal 3"
 
 #### Soal 4
