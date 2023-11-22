@@ -92,7 +92,7 @@ Absen  : 29
 
     - Langkah 15, melalui metode 'addRandomNumber', menambahkan error ke dalam stream dengan memanggil 'numberStream.addError()'. Error ini kemudian ditangkap oleh langkah sebelumnya (Langkah 14) untuk dikelola.
 
-    <img src="docs/soal7.gif" alt="Screenshoot Master Plan" width="230" height="430">
+        <img src="docs/soal7.gif" alt="Screenshoot Master Plan" width="230" height="430">
 
 - Kembalikan kode seperti semula pada Langkah 15, comment addError() agar Anda dapat melanjutkan ke praktikum 3 berikutnya.
 
@@ -102,8 +102,27 @@ Absen  : 29
 
 #### Soal 8
 - Jelaskan maksud kode langkah 1-3 tersebut!
+
+    Jawab : 
+
+    - Langkah 1
+
+        Deklarasi variabel 'transformer sebagai variabel late untuk digunakan nanti.
+
+    - Langkah 2
+
+        Inisialisasi transformer sebagai objek 'StreamTransformer' yang mengubah data bertipe int menjadi int. Penanganan khusus ditentukan, termasuk perkalian nilai dengan 10 (handleData), penanganan error dengan mengirimkan error nilai -1 (handleError), dan penutupan sink saat stream selesai (handleDone).
+
+    - Langkah 3
+
+        Menggunakan 'transformer' untuk mengubah data dalam stream (stream.transform(transformer)) dan kemudian mendengarkan perubahan dalam stream. Jika ada data masuk, nilai dari data tersebut akan di-set sebagai 'lastNumber' dalam fungsi 'setState'. Jika terjadi error, nilai 'lastNumber' akan di-set sebagai -1 dalam fungsi setState.
+
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+    <img src="docs/soal8.gif" alt="Screenshoot Master Plan" width="230" height="430">
+
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 8".
+
 
 # Praktikum 4: Subscribe ke stream events
 
