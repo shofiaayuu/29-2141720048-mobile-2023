@@ -128,8 +128,31 @@ Absen  : 29
 
 #### Soal 9
 - Jelaskan maksud kode langkah 2, 6 dan 8 tersebut!
+
+    Jawab : 
+
+    - Langkah 2 
+
+        Dalam langkah ini, objek NumberStream dibuat untuk mengelola stream angka. numberStreamController digunakan untuk mengontrol stream, dan langganan (listen) dibuat untuk mengupdate nilai lastNumber setiap kali ada data masuk.
+    
+    - Langkah 6 
+
+        numberStreamController.close() digunakan untuk menutup controller stream, menghentikan pengiriman data ke dalam stream. Selanjutnya, subscription.cancel() digunakan untuk membatalkan langganan (subscription) terhadap stream yang telah dibuat sebelumnya. Hal ini penting untuk memastikan bahwa tidak ada langganan yang tersisa yang dapat menyebabkan memory leak atau masalah sumber daya lainnya setelah widget atau halaman dihapus.
+
+    - Langkah 8
+
+        Fungsi addRandomNumber digunakan untuk menambahkan bilangan acak ke dalam stream. Sebelum menambahkan nilai, dilakukan pengecekan apakah controller stream sudah ditutup. Jika sudah, nilai lastNumber di-set sebagai -1.
+
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+    <img src="docs/soal9.gif" alt="Screenshoot Master Plan" width="230" height="430">
+
+    Tekan button ‘Stop Subscription' : Anda akan melihat pesan di Debug Console seperti berikut.
+
+    ![Screenshoot stream_shofiatul](docs/soal9.jpg)
+
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 9".
+
 
 # Praktikum 5: Multiple stream subscriptions
 
