@@ -54,8 +54,10 @@ Absen  : 29
 - Jelaskan perbedaan menggunakan listen dan await for (langkah 9) !
 
     Jawab : 
+
     Perbedaan antara menggunakan 'await for' dan 'listen' terletak pada pendekatan dan interaksi dengan stream. 
     - await for bersifat imperatif dan secara aktif menunggu serta mengonsumsi setiap nilai stream secara berurutan, sementara 
+
     - listen bersifat deklaratif, mendaftarkan callback untuk dijalankan setiap kali stream mengeluarkan nilai baru. 
     Dalam konteks kode yang diberikan, keduanya mencapai hasil yang sama yaitu pembaruan nilai 'bgColor'.
 
@@ -67,6 +69,7 @@ Absen  : 29
 - Jelaskan maksud kode langkah 8 dan 10 tersebut!
     
     Jawab :
+    
     - Langkah 8:
 
         Dalam initState, objek 'NumberStream' dan 'numberStreamController' diinisialisasi. Stream diambil dari 'numberStreamController.stream', dan setiap kali stream mengeluarkan nilai baru, callback dijalankan untuk mengupdate lastNumber dan memicu pembangunan ulang widget dengan setState.
