@@ -206,5 +206,23 @@ Program tersebut karena mencoba untuk mendengarkan (listen) stream yang sama leb
 
 #### Soal 13
 - Jelaskan maksud praktikum ini ! Dimanakah letak konsep pola BLoC-nya ?
+
+    Jawab : 
+
+    Pada praktikum ini, konsep BLoC (Business Logic Component) diimplementasikan dalam kelas RandomNumberBloc. 
+    
+    Dua StreamController digunakan: 
+    - _generateRandomController untuk menerima input events dan _randomNumberController untuk mengeluarkan output stream angka acak.
+
+    - generateRandom sink digunakan untuk menerima event saat tombol ditekan.
+    - randomNumber stream digunakan untuk menyediakan stream angka acak ke widget yang mendengarkan.
+
+    Kelas RandomScreen menggunakan StreamBuilder untuk membangun antarmuka pengguna yang mendengarkan stream _randomNumberController. Event dari tombol FloatingActionButton memicu pembangunan ulang tampilan dan menghasilkan angka acak baru.
+
+    Dengan menggunakan pola BLoC, logika bisnis dipisahkan dari tampilan, meningkatkan maintainability dan testability dalam pengembangan aplikasi Flutter.
+
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+    <img src="docs/soal13.gif" alt="Screenshoot Master Plan" width="230" height="430">
+
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 13".
