@@ -184,8 +184,23 @@ Program tersebut karena mencoba untuk mendengarkan (listen) stream yang sama leb
 
 #### Soal 12
 - Jelaskan maksud kode pada langkah 3 dan 7 !
+
+    Jawab :
+
+    - Langkah 3
+
+        Pada langkah ini, membuat kelas NumberStream yang memiliki method getNumbers(). Method ini menggunakan generator async* untuk menghasilkan stream angka secara periodik setiap detik. Setiap kali stream diambil, sebuah angka acak antara 0 dan 9 dibuat dan dikembalikan.
+
+    - Langkah 7
+
+        Pada langkah ini, menggunakan StreamBuilder untuk membangun sebuah widget yang merespons data dari stream. Widget ini memonitor perubahan pada stream dan secara otomatis membangun ulang tampilan ketika ada perubahan data. Jika terjadi kesalahan pada stream, kita mencetak 'Error!'. Jika ada data pada stream, kita menampilkan teks dengan ukuran font 96. Jika tidak ada data, kita menggunakan SizedBox.shrink() untuk membuat widget yang tidak terlihat.
+
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+    <img src="docs/soal12.gif" alt="Screenshoot Master Plan" width="230" height="430">
+
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 12".
+
 
 # Praktikum 7: BLoC Pattern
 
