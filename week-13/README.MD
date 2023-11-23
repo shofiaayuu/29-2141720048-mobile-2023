@@ -157,11 +157,27 @@ Absen  : 29
 # Praktikum 5: Multiple stream subscriptions
 
 #### Soal 10
+
 Jelaskan mengapa error itu bisa terjadi ?
 
+<img src="docs/soal10.jpg" alt="Screenshoot Master Plan" width="230" height="430">
+
+Jawab :
+
+Program tersebut karena mencoba untuk mendengarkan (listen) stream yang sama lebih dari satu kali secara bersamaan. Jadi ketika dijalankan bersamaan akan terjadi konflik karena stream bersifat unik.
+
 #### Soal 11
+
 - Jelaskan mengapa hal itu bisa terjadi ?
+
+    Jawab :
+
+    'numberStreamController.stream.asBroadcastStream()' memungkinkan stream dapat didengarkan oleh beberapa subscriptions secara bersamaan. Berbeda dengan stream biasa yang hanya dapat didengarkan sekali, setiap subscription akan menerima data yang sama secara bersamaan. Ini berguna ketika kita perlu membagikan data stream kepada beberapa penerima tanpa menghasilkan stream baru untuk setiap langganan.
+
 - Capture hasil praktikum Anda berupa GIF dan lampirkan di README.
+
+    <img src="docs/soal10.gif" alt="Screenshoot Master Plan" width="230" height="430">
+
 - Lalu lakukan commit dengan pesan "W13: Jawaban Soal 10,11".
 
 # Praktikum 6: StreamBuilder
